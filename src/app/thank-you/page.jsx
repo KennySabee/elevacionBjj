@@ -1,8 +1,8 @@
 import { SimpleLayout } from '@/components/SimpleLayout'
 
 export const metadata = {
-  title: 'You’re subscribed',
-  description: 'Thanks for subscribing to my newsletter.',
+  title: 'Estas suscrito',
+  description: 'Gracias por suscribirte a nuestra newsletter.',
 }
 
 export default function ThankYou() {

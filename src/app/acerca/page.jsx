@@ -37,7 +37,7 @@ function MailIcon(props) {
 }
 
 export const metadata = {
-  title: 'About',
+  title: 'Acerca',
   description:
     'Hola somos Sierra BJJ, estamos ubicados en el valle de los chillos, donde formamos artistas marciales dentro y fuera del tatami.',
 }
