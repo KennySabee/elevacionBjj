@@ -108,14 +108,13 @@ function MobileNavigation(props) {
             <CloseIcon className="h-6 w-6 text-zinc-500 dark:text-zinc-400" />
           </PopoverButton>
           <h2 className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
-            Sierra BJJ
+            Elevación BJJ
           </h2>
         </div>
         <nav className="mt-6">
           <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
             <MobileNavItem href="/acerca">Acerca</MobileNavItem>
-            <MobileNavItem href="/articles">Artículos</MobileNavItem>
-            <MobileNavItem href="/equipo">Equipo</MobileNavItem>
+            <MobileNavItem href="/equipo">Brazilian Jiu-Jitsu</MobileNavItem>
             <MobileNavItem href="/horarios">Clases y horarios</MobileNavItem>
             <MobileNavItem href="/contacto">Contacto</MobileNavItem>
           </ul>
@@ -153,8 +152,7 @@ function DesktopNavigation(props) {
     <nav {...props}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
         <NavItem href="/acerca">Acerca</NavItem>
-        <NavItem href="/articles">Artículos</NavItem>
-        <NavItem href="/equipo">Equipo</NavItem>
+        <NavItem href="/equipo">Jiu-jitsu</NavItem>
         <NavItem href="/horarios">Horarios</NavItem>
         <NavItem href="/contacto">Contacto</NavItem>
       </ul>

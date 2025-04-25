@@ -22,12 +22,12 @@ export function Footer() {
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
                 <NavLink href="/acerca">Acerca</NavLink>
-                <NavLink href="/equipo">Equipo</NavLink>
+                <NavLink href="/equipo">Jiu-jitsu</NavLink>
                 <NavLink href="/horarios">Horarios</NavLink>
                 <NavLink href="/contacto">Contacto</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Sierra BJJ. Todos los derechos reservados.
+                &copy; {new Date().getFullYear()} Elevación BJJ. Todos los derechos reservados.
               </p>
             </div>
           </ContainerInner>

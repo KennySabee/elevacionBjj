@@ -20,6 +20,8 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
+import contactoImage from '@/images/contacto/contacto.png'
+
 import { getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
@@ -230,7 +232,6 @@ function Resume() {
       </ol>
       <Button href="/equipo" variant="secondary" className="group mt-6 w-full">
         Conoce nuestro equipo
-        
       </Button>
     </div>
   )
@@ -271,15 +272,15 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Sierra BJJ, academia de Brazilian Jiu-Jitsu.
+            Elevación BJJ, academia de Brazilian Jiu-Jitsu.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Xavier Ledesma y Sebastián Lopez, instructores cinta negra de
-            Brazilian Jiu-Jitsu con años de experiencia y fundadores de la
-            academia Sierra BJJ. Nuestra misión es compartir la pasión por el
-            BJJ y ayudar a los estudiantes a desarrollar sus habilidades,
-            mejorar su condición física y aprender técnicas efectivas en un
-            ambiente amigable y de apoyo.
+            Kenny Merizalde y Alejandra Cattani, instructores con más de 10 años
+            de experiencia en artes marciales como Muay Thai y Brazilian
+            Jiu-jitsu son los fundadores de la academia Elevación BJJ. Nuestra
+            misión es compartir la pasión por el BJJ y ayudar a los estudiantes
+            a desarrollar sus habilidades, mejorar su condición física y
+            aprender técnicas efectivas en un ambiente amigable y de apoyo.
           </p>
 
           <div className="mt-6 flex gap-6">
@@ -305,16 +306,106 @@ export default async function Home() {
         </div>
       </Container>
       <Photos />
+
       <Container className="mt-24 md:mt-28">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col gap-16">
-            {articles.map((article) => (
-              <Article key={article.slug} article={article} />
-            ))}
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-2">
+            {/* Tarjeta 1 */}
+            <div className="mx-auto w-full max-w-xl">
+              <div className="group relative overflow-hidden rounded-sm shadow-lg">
+                <Image
+                  src={contactoImage}
+                  alt="About Us"
+                  width={800}
+                  height={533}
+                  className="h-auto w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 flex flex-col justify-end bg-black/50 p-6 text-white">
+                  <h2 className="text-2xl font-bold">Acerca de nosotros</h2>
+                  <p className="text-base">
+                    Nos esforzamos por mantener un ambiente donde te sientas
+                    animado, apoyado y motivado. Pero más que todo, lo que más
+                    queremos… es verte crecer y triunfar.
+                  </p>
+                </div>
+                <a
+                  href="/acerca"
+                  className="absolute inset-0 z-10"
+                  aria-label="About Us"
+                />
+              </div>
+            </div>
+
+            {/* Tarjeta 2 */}
+            <div className="mx-auto w-full max-w-xl">
+              <div className="group relative overflow-hidden rounded-sm shadow-lg">
+                <Image
+                  src={contactoImage}
+                  alt="Brazilian Jiu Jitsu"
+                  width={800}
+                  height={533}
+                  className="h-auto w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 flex flex-col justify-end bg-black/50 p-6 text-white">
+                  <h2 className="text-2xl font-bold">Brazilian Jiu Jitsu</h2>
+                  <p className="text-base">
+                    El BJJ se enfoca en enfrentar situaciones cuerpo a cuerpo en
+                    el piso, usando controles, proyecciones, golpes controlados
+                    y una variedad de técnicas de sumisión.
+                  </p>
+                </div>
+                <a
+                  href="https://bteamjj.com/brazilian-jiu-jitsu/"
+                  className="absolute inset-0 z-10"
+                  aria-label="Brazilian Jiu Jitsu"
+                />
+              </div>
+            </div>
           </div>
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
-            <Resume />
+        </div>
+      </Container>
+      <Container className="mt-12">
+        <div className="max-w-2xl">
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-4xl dark:text-zinc-100">
+            Contáctanos hoy mismo
+          </h1>
+        </div>
+      </Container>
+
+      <Container className="md:mt-16">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-2">
+            {/* Tarjeta 1 */}
+            <div className="mx-auto w-full max-w-xl">
+              <div className="group relative overflow-hidden rounded-sm shadow-lg">
+                <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+                  En Elevación Jiu-Jitsu tenemos todo… ¡menos a ti! Únete a la
+                  comunidad y empieza tu camino en las artes marciales desde hoy
+                  mismo.<br></br> <br></br>
+                  📞 (+593) 982 418 562 <br></br>
+                  📍 Valle de los Chillos, Quito Ecuador
+                </p>
+              </div>
+            </div>
+
+            {/* Tarjeta 2 */}
+            <div className="mx-auto w-full max-w-xl">
+              <div className="group relative overflow-hidden rounded-lg shadow-lg">
+                <Image
+                  src={contactoImage}
+                  alt="Brazilian Jiu Jitsu"
+                  width={800}
+                  height={533}
+                  className="h-auto w-full object-cover transition-transform duration-300 group-hover:scale-150"
+                />
+
+                <a
+                  href="https://bteamjj.com/brazilian-jiu-jitsu/"
+                  className="absolute inset-0 z-10"
+                  aria-label="Brazilian Jiu Jitsu"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </Container>
