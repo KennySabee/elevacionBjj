@@ -1,48 +1,51 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { SimpleLayout } from '@/components/SimpleLayout'
+import { Container } from '@/components/Container'
 import contactoImage from '@/images/contacto/contacto.png'
-
-export const metadata = {
-  title: 'Contacto',
-  description: 'Información de contacto, profesores.',
-}
 
 export default function Uses() {
   return (
-    <SimpleLayout
-      title="Contáctanos"
-      intro=" ¿Tienes alguna pregunta o quieres saber más sobre nuestras clases? ¡Nos encantaría saber de ti! Estamos aquí para ayudarte en tu camino en el Jiu-Jitsu Brasileño."
-    >
-      <div className="">
-        <h2 className="text-lg font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
-          Dirección:
-        </h2>
-        <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          Encuentra nuestra academia en el corazón del Valle de Los Chillos, al frente del hipermarket Sierra BJJ, donde ofrecemos un ambiente acogedor y profesional para
-          todos nuestros estudiantes.
-        </p>
-        <div className='mt-8 max-w-sm md:max-w-lg lg:max-w-xl '>
-          <Link
-            href="https://www.google.com/maps/place/Sierra+Jiu-jitsu/@-0.3093008,-78.4457347,17.25z/data=!4m6!3m5!1s0x91d5bdd671bd4a2b:0x26f8b1ca62c2f449!8m2!3d-0.3092594!4d-78.4443016!16s%2Fg%2F11q4bmvh9c?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D"
-            target="_blank"
-          >
-            <Image
-              className="rounded-xl duration-300 ease-in hover:scale-105"
-              src={contactoImage}
-              alt="contact image"
-            />
-          </Link>
-        </div>
-        <h2 className="mt-20 text-lg font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
-          Teléfono:
-        </h2>
-        <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          Llámanos al (+593) 996234984 para hablar directamente con uno de
-          nuestros instructores o para más información sobre horarios,
-          inscripciones y más.
-        </p>
-      </div>
-    </SimpleLayout>
+    <Container className="md:mt-16">
+      <div className="max-w-2xl mt-12 sm:mt-28">
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+            Empieza hoy en Elevación Jiu jitsu
+          </h1>
+        </div>  
+            <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+              <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-2">
+                {/* Tarjeta 1 */}
+                <div className="mx-auto w-full max-w-xl">
+                  <div className="group relative overflow-hidden">
+                    <p className="mt-6 sm:mt-20 text-base text-zinc-600 dark:text-zinc-400">
+                      En Elevación Jiu-Jitsu tenemos todo… ¡menos a ti! Únete a la
+                      comunidad y empieza tu camino en las artes marciales desde hoy
+                      mismo.<br></br> <br></br>
+                      📞 (+593) 982 418 562 <br></br>
+                      📍 Valle de los Chillos, Quito Ecuador
+                    </p>
+                  </div>
+                </div>
+    
+                {/* Tarjeta 2 */}
+                <div className="sm:mt-12 mx-auto w-full max-w-xl">
+                  <div className="group relative overflow-hidden rounded-lg shadow-lg">
+                    <Image
+                      src={contactoImage}
+                      alt="Brazilian Jiu Jitsu"
+                      width={800}
+                      height={533}
+                      className="h-auto w-full object-cover transition-transform duration-300 group-hover:scale-150"
+                    />
+    
+                    <a
+                      href="https://bteamjj.com/brazilian-jiu-jitsu/"
+                      className="absolute inset-0 z-10"
+                      aria-label="Brazilian Jiu Jitsu"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Container>
   )
 }

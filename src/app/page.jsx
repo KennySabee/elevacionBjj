@@ -377,7 +377,7 @@ export default async function Home() {
           <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-2">
             {/* Tarjeta 1 */}
             <div className="mx-auto w-full max-w-xl">
-              <div className="group relative overflow-hidden rounded-sm shadow-lg">
+              <div className="group relative overflow-hidden ">
                 <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
                   En Elevación Jiu-Jitsu tenemos todo… ¡menos a ti! Únete a la
                   comunidad y empieza tu camino en las artes marciales desde hoy
