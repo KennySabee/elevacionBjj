@@ -6,7 +6,7 @@ import contactoImage from '@/images/contacto/contacto.png'
 
 export const metadata = {
   title: 'Equipo',
-  description: 'Conoce el equipo de nuestra academia elevacion BJJ',
+  description: 'Conoce el equipo de nuestra academia La Ruta BJJ',
 }
 
 export default function Projects() {
@@ -15,7 +15,7 @@ export default function Projects() {
       <Container className="md:mt-16">
         <div className="mt-12 max-w-2xl sm:mt-28">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Eleven Team Brazilian Jiu Jitsu Program
+          La Ruta Brazilian Jiu Jitsu Program
           </h1>
         </div>
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -186,7 +186,7 @@ export default function Projects() {
               <div className="group relative overflow-hidden">
                 <p className="mt-6 text-base text-zinc-600 sm:mt-20 dark:text-zinc-400">
                   Vas a amar el BJJ… porque nosotros lo amamos. En
-                  B-Team BJJ vivimos para compartir el Jiu-Jitsu con nuestra
+                  La Ruta BJJ vivimos para compartir el Jiu-Jitsu con nuestra
                   comunidad. Nuestro objetivo es crear un ambiente donde cada
                   persona —sea quien sea— pueda alcanzar sus metas, sin importar
                   si vienes de años entrenando MMA o si solo estás buscando algo

@@ -64,7 +64,7 @@ function MailIcon(props) {
 export const metadata = {
   title: 'Acerca',
   description:
-    'Hola somos Elevación BJJ, estamos ubicados en el valle de los chillos, donde formamos artistas marciales dentro y fuera del tatami.',
+    'Hola somos La Ruta BJJ, estamos ubicados en el valle de los chillos, donde formamos artistas marciales dentro y fuera del tatami.',
 }
 
 export default function About() {
@@ -83,19 +83,19 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-              Hola somos Elevación BJJ y formamos artistas marciales dentro y
+              Hola somos La Ruta BJJ y formamos artistas marciales dentro y
               fuera del tatami.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                Elevación Jiu-Jitsu, con base en Quito, Ecuador, fue creado por
+              La Ruta Jiu-Jitsu, con base en Quito, Ecuador, fue creado por
                 algunos de los grapplers ecuatorianos más duros y talentosos que
                 han pisado los tatamis. Abrieron esta academia con una sola
                 misión: ofrecer una representación actual y real del grappling
                 moderno.
               </p>
               <p>
-                En Elevación BJJ, te invitamos a ser parte de una comunidad
+                En La Ruta BJJ, te invitamos a ser parte de una comunidad
                 apasionada y comprometida. Ven y descubre la fuerza y el
                 potencial que llevas dentro. Ya sea que quieras convertirte en
                 un competidor de élite, mejorar tu condición física, o
@@ -132,7 +132,7 @@ export default function About() {
                 icon={MailIcon}
                 className="mt-4 border-t border-zinc-100 dark:border-zinc-700/40"
               >
-                elevaciónbjj@gmail.com
+                larutabjj@gmail.com
               </SocialLink>
             </ul>
           </div>
@@ -185,7 +185,7 @@ export default function About() {
       <Container className="mt-12 sm:mt-28">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-4xl dark:text-zinc-100">
-            Empieza hoy en Elevación Jiu jitsu
+            Empieza hoy en La Ruta Jiu jitsu
           </h1>
         </div>
       </Container>
@@ -196,7 +196,7 @@ export default function About() {
             <div className="mx-auto w-full max-w-xl">
               <div className="group relative overflow-hidden">
                 <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                  En Elevación Jiu-Jitsu tenemos todo… ¡menos a ti! Únete a la
+                  En La Ruta Jiu-Jitsu tenemos todo… ¡menos a ti! Únete a la
                   comunidad y empieza tu camino en las artes marciales desde hoy
                   mismo.<br></br> <br></br>
                   📞 (+593) 982 418 562 <br></br>

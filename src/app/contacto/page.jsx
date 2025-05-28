@@ -8,7 +8,7 @@ export default function Uses() {
     <Container className="md:mt-16">
       <div className="max-w-2xl mt-12 sm:mt-28">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Empieza hoy en Elevación Jiu jitsu
+            Empieza hoy en La Ruta Jiu jitsu
           </h1>
         </div>  
             <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -17,7 +17,7 @@ export default function Uses() {
                 <div className="mx-auto w-full max-w-xl">
                   <div className="group relative overflow-hidden">
                     <p className="mt-6 sm:mt-20 text-base text-zinc-600 dark:text-zinc-400">
-                      En Elevación Jiu-Jitsu tenemos todo… ¡menos a ti! Únete a la
+                      En La Ruta Jiu-Jitsu tenemos todo… ¡menos a ti! Únete a la
                       comunidad y empieza tu camino en las artes marciales desde hoy
                       mismo.<br></br> <br></br>
                       📞 (+593) 982 418 562 <br></br>

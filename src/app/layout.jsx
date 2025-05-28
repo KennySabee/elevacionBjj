@@ -5,12 +5,12 @@ import '@/styles/tailwind.css'
 
 export const metadata = {
   title: {
-    template: '%s - Elevación BJJ',
+    template: '%s - La Ruta BJJ',
     default:
-      'Elevación BJJ - Academia de Brazilian Jiujitsu',
+      'La Ruta BJJ - Academia de Brazilian Jiujitsu',
   },
   description:
-    'Bienvenido a Elevación BJJ, tu academia de Brazilian Jiu-Jitsu. Somos apasionados del BJJ y dedicados a enseñar esta disciplina a todos, desde principiantes hasta avanzados. Únete a nosotros para mejorar tus habilidades, aprender técnicas efectivas y formar parte de una comunidad apasionada por el Jiu-Jitsu.',
+    'Bienvenido a La Ruta BJJ, tu academia de Brazilian Jiu-Jitsu. Somos apasionados del BJJ y dedicados a enseñar esta disciplina a todos, desde principiantes hasta avanzados. Únete a nosotros para mejorar tus habilidades, aprender técnicas efectivas y formar parte de una comunidad apasionada por el Jiu-Jitsu.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,

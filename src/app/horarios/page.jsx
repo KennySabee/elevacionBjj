@@ -20,7 +20,7 @@ export default function Horarios() {
     
     <SimpleLayout
       title="Horarios de clases"
-      intro="En Elevación BJJ, ofrecemos una variedad de horarios para adaptarnos a tu estilo de vida y necesidades. Nuestras clases están diseñadas tanto para niños como para adultos, con sesiones en la mañana y en la tarde."
+      intro="En La Ruta BJJ, ofrecemos una variedad de horarios para adaptarnos a tu estilo de vida y necesidades. Nuestras clases están diseñadas tanto para niños como para adultos, con sesiones en la mañana y en la tarde."
     >
       <div className="max-w-xs px-2.5 md:max-w-s lg:max-w-md md:flex gap-16">
       <Image
@@ -41,7 +41,7 @@ export default function Horarios() {
     <Container className="md:mt-16">
           <div className="max-w-2xl mt-12 sm:mt-28">
               <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-4xl dark:text-zinc-100">
-                Empieza hoy en Elevación Jiu jitsu
+                Empieza hoy en La Ruta Jiu jitsu
               </h1>
             </div>  
                 <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -50,7 +50,7 @@ export default function Horarios() {
                     <div className="mx-auto w-full max-w-xl">
                       <div className="group relative overflow-hidden">
                         <p className="mt-6 sm:mt-20 text-base text-zinc-600 dark:text-zinc-400">
-                          En Elevación Jiu-Jitsu tenemos todo… ¡menos a ti! Únete a la
+                          En La Ruta Jiu-Jitsu tenemos todo… ¡menos a ti! Únete a la
                           comunidad y empieza tu camino en las artes marciales desde hoy
                           mismo.<br></br> <br></br>
                           📞 (+593) 982 418 562 <br></br>

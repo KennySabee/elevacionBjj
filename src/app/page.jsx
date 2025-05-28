@@ -272,12 +272,12 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Elevación BJJ, academia de Brazilian Jiu-Jitsu.
+          La Ruta BJJ, academia de Brazilian Jiu-Jitsu.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             Kenny Merizalde y Alejandra Cattani, instructores con más de 10 años
             de experiencia en artes marciales como Muay Thai y Brazilian
-            Jiu-jitsu son los fundadores de la academia Elevación BJJ. Nuestra
+            Jiu-jitsu son los fundadores de la academia La Ruta BJJ. Nuestra
             misión es compartir la pasión por el BJJ y ayudar a los estudiantes
             a desarrollar sus habilidades, mejorar su condición física y
             aprender técnicas efectivas en un ambiente amigable y de apoyo.
@@ -379,7 +379,7 @@ export default async function Home() {
             <div className="mx-auto w-full max-w-xl">
               <div className="group relative overflow-hidden ">
                 <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                  En Elevación Jiu-Jitsu tenemos todo… ¡menos a ti! Únete a la
+                  En La Ruta Jiu-Jitsu tenemos todo… ¡menos a ti! Únete a la
                   comunidad y empieza tu camino en las artes marciales desde hoy
                   mismo.<br></br> <br></br>
                   📞 (+593) 982 418 562 <br></br>
