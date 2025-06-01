@@ -5,8 +5,8 @@ import { Container } from '@/components/Container'
 import contactoImage from '@/images/contacto/contacto.png'
 
 export const metadata = {
-  title: 'Equipo',
-  description: 'Conoce el equipo de nuestra academia La Ruta BJJ',
+  title: 'JIu jitsu',
+  description: 'Conoce acerca del jiujitsu brasileño y de nuestra academia La Ruta BJJ',
 }
 
 export default function Projects() {

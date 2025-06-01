@@ -10,7 +10,7 @@ import {
   FacebookIcon,
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
-import kennyImage from '@/images/equipo/kenny.jpg'
+import kennyImage from '@/images/equipo/kennyPerfil.jpg'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -83,7 +83,7 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-              Hola somos La Ruta BJJ y formamos artistas marciales dentro y
+              Hola somos LA RUTA JIU JITSU y formamos artistas marciales dentro y
               fuera del tatami.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
