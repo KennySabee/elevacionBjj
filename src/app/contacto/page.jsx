@@ -3,6 +3,13 @@ import Link from 'next/link'
 import { Container } from '@/components/Container'
 import contactoImage from '@/images/contacto/contacto.png'
 
+export const metadata = {
+  title: 'Contacto | La Ruta BJJ - Jiu-Jitsu en el Valle de los Chillos',
+  description:
+    '¿Listo para comenzar tu camino en el Jiu-Jitsu? Contáctanos en La Ruta BJJ, ubicada en el Valle de los Chillos, y déjanos ayudarte a desarrollar tus habilidades marciales en un ambiente lleno de apoyo y pasión.',
+}
+
+
 export default function Uses() {
   return (
     <Container className="md:mt-16">

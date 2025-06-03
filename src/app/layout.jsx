@@ -6,17 +6,17 @@ import '@/styles/tailwind.css'
 export const metadata = {
   title: {
     template: '%s - La Ruta BJJ',
-    default:
-      'La Ruta BJJ - Academia de Brazilian Jiujitsu',
+    default: 'La Ruta BJJ - Academia de Brazilian Jiu-Jitsu en el Valle de los Chillos',
   },
   description:
-    'Bienvenido a La Ruta BJJ, tu academia de Brazilian Jiu-Jitsu. Somos apasionados del BJJ y dedicados a enseñar esta disciplina a todos, desde principiantes hasta avanzados. Únete a nosotros para mejorar tus habilidades, aprender técnicas efectivas y formar parte de una comunidad apasionada por el Jiu-Jitsu.',
+    'Bienvenido a La Ruta BJJ, tu academia de Brazilian Jiu-Jitsu en el Valle de los Chillos. Somos apasionados del BJJ y enseñamos esta y otras artes marciales a todos, desde principiantes hasta avanzados. Únete a nosotros, mejora tu técnica y forma parte de una comunidad dedicada al Jiu-Jitsu.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
     },
   },
 }
+
 
 export default function RootLayout({ children }) {
   return (

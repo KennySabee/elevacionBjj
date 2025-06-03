@@ -9,9 +9,9 @@ import faqsImage from '@/images/horarios/faqs.jpg'
 
 
 export const metadata = {
-  title: 'Horarios',
+  title: 'Horarios y Precios | La Ruta BJJ - Jiu-Jitsu en el Valle de los Chillos',
   description:
-    'I’ve spoken at events all around the world and been interviewed for many podcasts.',
+    'Consulta los horarios de clases y precios en La Ruta BJJ, la academia de Jiu-Jitsu en el Valle de los Chillos. Diseñamos planes flexibles para que puedas entrenar y crecer en un ambiente amigable y de apoyo.',
 }
 
 export default function Horarios() {

@@ -2,12 +2,21 @@ import Image from 'next/image'
 
 import { Container } from '@/components/Container'
 
-import contactoImage from '@/images/contacto/contacto.png'
+
+import bjjImage from '@/images/equipo/askArena2.jpg'
+import grapplingImage from '@/images/equipo/grappling.jpg'
+import defensaPersonalImage from '@/images/equipo/bjj4.jpg'
+import ambienteImagen from '@/images/equipo/kids.jpg'
+
+
+
 
 export const metadata = {
-  title: 'JIu jitsu',
-  description: 'Conoce acerca del jiujitsu brasileño y de nuestra academia La Ruta BJJ',
+  title: 'Jiu-Jitsu Brasileño | La Ruta BJJ en el Valle de los Chillos',
+  description:
+    'Descubre los orígenes, beneficios y técnicas del Jiu-Jitsu brasileño en La Ruta BJJ. Únete a nuestra comunidad en el Valle de los Chillos y transforma tu cuerpo y mente en el tatami.',
 }
+
 
 export default function Projects() {
   return (
@@ -39,18 +48,14 @@ export default function Projects() {
             <div className="mx-auto w-full max-w-xl sm:mt-12">
               <div className="group relative overflow-hidden rounded-lg shadow-lg">
                 <Image
-                  src={contactoImage}
+                  src={bjjImage}
                   alt="Brazilian Jiu Jitsu"
                   width={800}
                   height={533}
-                  className="h-auto w-full object-cover transition-transform duration-300 group-hover:scale-150"
+                  className="h-auto w-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
 
-                <a
-                  href="https://bteamjj.com/brazilian-jiu-jitsu/"
-                  className="absolute inset-0 z-10"
-                  aria-label="Brazilian Jiu Jitsu"
-                />
+                
               </div>
             </div>
           </div>
@@ -69,18 +74,14 @@ export default function Projects() {
             <div className="mx-auto w-full max-w-xl sm:mt-12">
               <div className="group relative overflow-hidden rounded-lg shadow-lg">
                 <Image
-                  src={contactoImage}
+                  src={grapplingImage}
                   alt="Brazilian Jiu Jitsu"
                   width={800}
                   height={533}
-                  className="h-auto w-full object-cover transition-transform duration-300 group-hover:scale-150"
+                  className="h-auto w-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
 
-                <a
-                  href="https://bteamjj.com/brazilian-jiu-jitsu/"
-                  className="absolute inset-0 z-10"
-                  aria-label="Brazilian Jiu Jitsu"
-                />
+                
               </div>
             </div>
             {/* Tarjeta 1 */}
@@ -137,18 +138,14 @@ export default function Projects() {
             <div className="mx-auto w-full max-w-xl sm:mt-32">
               <div className="group relative overflow-hidden rounded-lg shadow-lg">
                 <Image
-                  src={contactoImage}
+                  src={defensaPersonalImage}
                   alt="Brazilian Jiu Jitsu"
                   width={800}
                   height={533}
-                  className="h-auto w-full object-cover transition-transform duration-300 group-hover:scale-150"
+                  className="h-auto w-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
 
-                <a
-                  href="https://bteamjj.com/brazilian-jiu-jitsu/"
-                  className="absolute inset-0 z-10"
-                  aria-label="Brazilian Jiu Jitsu"
-                />
+                
               </div>
             </div>
           </div>
@@ -167,18 +164,14 @@ export default function Projects() {
             <div className="mx-auto w-full max-w-xl sm:mt-12">
               <div className="group relative overflow-hidden rounded-lg shadow-lg">
                 <Image
-                  src={contactoImage}
+                  src={ambienteImagen}
                   alt="Brazilian Jiu Jitsu"
                   width={800}
                   height={533}
-                  className="h-auto w-full object-cover transition-transform duration-300 group-hover:scale-150"
+                  className="h-auto w-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
 
-                <a
-                  href="https://bteamjj.com/brazilian-jiu-jitsu/"
-                  className="absolute inset-0 z-10"
-                  aria-label="Brazilian Jiu Jitsu"
-                />
+                
               </div>
             </div>
             {/* Tarjeta 1 */}

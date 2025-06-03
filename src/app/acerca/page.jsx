@@ -9,7 +9,7 @@ import {
   InstagramIcon,
   FacebookIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import portraitImage from '@/images//equipo/kidsmuay.jpg'
 import kennyImage from '@/images/equipo/kennyPerfil.jpg'
 
 function SocialLink({ className, href, children, icon: Icon }) {
@@ -29,21 +29,21 @@ function SocialLink({ className, href, children, icon: Icon }) {
 
 const people = [
   {
-    name: 'Kenny',
-    role: 'Instructor principal',
+    name: 'Kenny Merizalde',
+    role: 'Head Coach',
     imageUrl: kennyImage,
     xUrl: '#',
   },
   {
     name: 'Alejandra',
-    role: 'Instructora de clases ',
+    role: 'Instructor de Muay Thai ',
     imageUrl: kennyImage,
     xUrl: '#',
   },
   ,
   {
-    name: 'Alejandra',
-    role: 'Instructora de clases ',
+    name: 'Nicole',
+    role: 'Instructora Flex y Movilidad ',
     imageUrl: kennyImage,
     xUrl: '#',
   },
@@ -62,10 +62,11 @@ function MailIcon(props) {
 }
 
 export const metadata = {
-  title: 'Acerca',
+  title: 'Acerca de La Ruta BJJ | Jiu-Jitsu en el Valle de los Chillos',
   description:
-    'Hola somos La Ruta BJJ, estamos ubicados en el valle de los chillos, donde formamos artistas marciales dentro y fuera del tatami.',
+    'En La Ruta BJJ, en el Valle de los Chillos, formamos artistas marciales dentro y fuera del tatami. Descubre nuestra pasión por el Jiu-Jitsu y cómo te ayudamos a desarrollar habilidades físicas y mentales en un ambiente de apoyo.',
 }
+
 
 export default function About() {
   return (
