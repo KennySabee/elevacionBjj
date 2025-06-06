@@ -29,7 +29,7 @@ export default function Horarios() {
               src={horariosImage}
               alt="rutaHorario"
               
-              className="aspect-square rounded-2xl bg-zinc-100 object-center dark:bg-zinc-800"
+              className="mb-10 sm:mb-0 aspect-square rounded-2xl bg-zinc-100 object-center dark:bg-zinc-800"
             />
             <Image
               src={horariosImageKids}
