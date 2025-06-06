@@ -67,7 +67,6 @@ export const metadata = {
     'En La Ruta BJJ, en el Valle de los Chillos, formamos artistas marciales dentro y fuera del tatami. Descubre nuestra pasión por el Jiu-Jitsu y cómo te ayudamos a desarrollar habilidades físicas y mentales en un ambiente de apoyo.',
 }
 
-
 export default function About() {
   return (
     <>
@@ -77,19 +76,19 @@ export default function About() {
             <div className="max-w-xs px-2.5 lg:max-w-none">
               <Image
                 src={portraitImage}
-                alt="sierraPortada"
+                alt="rutaPortada"
                 className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
             </div>
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-              Hola somos LA RUTA JIU JITSU y formamos artistas marciales dentro y
-              fuera del tatami.
+              Hola somos LA RUTA JIU JITSU y formamos artistas marciales dentro
+              y fuera del tatami.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-              La Ruta Jiu-Jitsu, con base en Quito, Ecuador, fue creado por
+                La Ruta Jiu-Jitsu, con base en Quito, Ecuador, fue creado por
                 algunos de los grapplers ecuatorianos más duros y talentosos que
                 han pisado los tatamis. Abrieron esta academia con una sola
                 misión: ofrecer una representación actual y real del grappling
@@ -108,32 +107,33 @@ export default function About() {
           <div className="lg:pl-20">
             <ul role="list">
               <SocialLink
-                href="https://www.instagram.com/sierra_jiujitsu/"
+                href="https://www.instagram.com/larutajiujitsu/"
                 icon={InstagramIcon}
                 className="mt-4"
               >
                 Siguenos en Instagram
               </SocialLink>
               <SocialLink
-                href="https://www.tiktok.com/@sierrajiujitsu"
+                href="https://www.tiktok.com/@larutajiujitsu"
                 icon={TikTokIcon}
                 className="mt-4"
               >
                 Siguenos en TikTok
               </SocialLink>
               <SocialLink
-                href="https://www.facebook.com/sierrajiujitsu"
+                href="https://www.facebook.com/profile.php?id=61577125497294"
                 icon={FacebookIcon}
                 className="mt-4"
               >
                 Siguenos en Facebook
               </SocialLink>
               <SocialLink
-                href="mailto:kenny@gmail.com"
+                href="mailto: larutajiujitsu@gmail.com
+"
                 icon={MailIcon}
                 className="mt-4 border-t border-zinc-100 dark:border-zinc-700/40"
               >
-                larutabjj@gmail.com
+                larutajiujitsu@gmail.com
               </SocialLink>
             </ul>
           </div>
@@ -200,7 +200,8 @@ export default function About() {
                   En La Ruta Jiu-Jitsu tenemos todo… ¡menos a ti! Únete a la
                   comunidad y empieza tu camino en las artes marciales desde hoy
                   mismo.<br></br> <br></br>
-                  📞 (+593) 982 418 562 <br></br>
+                  <a href="https://wa.me/593984162681" target="_blank">📞 (+593) 984 162 681</a>
+ <br></br>
                   📍 Valle de los Chillos, Quito Ecuador
                 </p>
               </div>

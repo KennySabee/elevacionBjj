@@ -91,7 +91,7 @@ export default async function Home() {
               icon={InstagramIcon}
             />
             <SocialLink
-              href="https://www.facebook.com/larutajiujitsu"
+              href="https://www.facebook.com/profile.php?id=61577125497294"
               target="_blanck"
               aria-label="Follow on Facebook"
               icon={FacebookIcon}
@@ -150,7 +150,7 @@ export default async function Home() {
                   </p>
                 </div>
                 <a
-                  href="https://bteamjj.com/brazilian-jiu-jitsu/"
+                  href="/jiujitsu"
                   className="absolute inset-0 z-10"
                   aria-label="Brazilian Jiu Jitsu"
                 />
@@ -177,7 +177,9 @@ export default async function Home() {
                   En La Ruta Jiu-Jitsu tenemos todo… ¡menos a ti! Únete a la
                   comunidad y empieza tu camino en las artes marciales desde hoy
                   mismo.<br></br> <br></br>
-                  📞 (+593) 982 418 562 <br></br>
+                  <a href="https://wa.me/593984162681" target="_blank">📞 (+593) 984 162 681</a>
+
+                 <br></br>
                   📍 Valle de los Chillos, Quito Ecuador
                 </p>
               </div>

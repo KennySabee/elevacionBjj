@@ -3,8 +3,10 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import { Container } from '@/components/Container'
 
 import contactoImage from '@/images/contacto/contacto.png'
-import horariosImage from '@/images/horarios/horarios.jpg'
-import faqsImage from '@/images/horarios/faqs.jpg'
+import horariosImage from '@/images/horarios/horariosRutaAdultos.png'
+import horariosImageKids from '@/images/horarios/horariosRutaKids.png'
+import precioImage from '@/images/horarios/preciosRuta.png'
+
 
 
 
@@ -25,13 +27,29 @@ export default function Horarios() {
       <div className="max-w-xs px-2.5 md:max-w-s lg:max-w-md md:flex gap-16">
       <Image
               src={horariosImage}
-              alt="sierraHorario"
+              alt="rutaHorario"
               
-              className="mb-10 aspect-square  rounded-2xl bg-zinc-100 object-center dark:bg-zinc-800"
+              className="aspect-square rounded-2xl bg-zinc-100 object-center dark:bg-zinc-800"
             />
             <Image
-              src={faqsImage}
-              alt="sierraFaqs"
+              src={horariosImageKids}
+              alt="rutaHorarioKids"
+              
+              className="aspect-square rounded-2xl bg-zinc-100 object-center dark:bg-zinc-800"
+            />
+            
+        
+      </div>
+    </SimpleLayout>
+    <SimpleLayout
+      title="Precios"
+      intro="En La Ruta BJJ, ofrecemos una variedad de precios para adaptarnos a tu estilo de vida y necesidades."
+    >
+      <div className="max-w-xs px-2.5 md:max-w-s lg:max-w-md md:flex gap-16">
+      
+            <Image
+              src={precioImage}
+              alt="precioRuta"
               
               className="aspect-square rounded-2xl bg-zinc-100 object-center dark:bg-zinc-800"
             />
@@ -53,7 +71,8 @@ export default function Horarios() {
                           En La Ruta Jiu-Jitsu tenemos todo… ¡menos a ti! Únete a la
                           comunidad y empieza tu camino en las artes marciales desde hoy
                           mismo.<br></br> <br></br>
-                          📞 (+593) 982 418 562 <br></br>
+                          <a href="https://wa.me/593984162681" target="_blank">📞 (+593) 984 162 681</a>
+ <br></br>
                           📍 Valle de los Chillos, Quito Ecuador
                         </p>
                       </div>
