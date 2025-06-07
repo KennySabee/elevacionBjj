@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Container } from '@/components/Container'
-import contactoImage from '@/images/contacto/contacto.png'
+import contactoImage from '@/images/contacto/contacto.jpeg'
 
 export const metadata = {
   title: 'Contacto | La Ruta BJJ - Jiu-Jitsu en el Valle de los Chillos',
@@ -27,9 +27,9 @@ export default function Uses() {
                       En La Ruta Jiu-Jitsu tenemos todo… ¡menos a ti! Únete a la
                       comunidad y empieza tu camino en las artes marciales desde hoy
                       mismo.<br></br> <br></br>
-                      <a href="https://wa.me/593984162681" target="_blank">📞 (+593) 984 162 681</a>
+                      <a href="https://wa.me/593984162681" target="_blank">📞 WhatsApp click aquí (+593) 984 162 681</a>
  <br></br>
-                      📍 Valle de los Chillos, Quito Ecuador
+                      📍 Av. Ilalo y Rio Zamora, Valle de los Chillos, Quito Ecuador
                     </p>
                   </div>
                 </div>
@@ -46,7 +46,8 @@ export default function Uses() {
                     />
     
                     <a
-                      href="https://bteamjj.com/brazilian-jiu-jitsu/"
+                      href="https://www.google.com/maps/place/HORNO+DE+LE%C3%91A+(sucursal+El+Tri%C3%A1ngulo)/@-0.2963972,-78.4562364,17z/data=!3m1!4b1!4m6!3m5!1s0x91d5bd7b84cc895b:0x6f64d764d89e9c4!8m2!3d-0.2963972!4d-78.4536615!16s%2Fg%2F11j0h9rr1v?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D"
+                      target='blank'
                       className="absolute inset-0 z-10"
                       aria-label="Brazilian Jiu Jitsu"
                     />
