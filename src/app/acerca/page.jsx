@@ -188,7 +188,7 @@ export default function About() {
                   En La Ruta Jiu-Jitsu tenemos todo… ¡menos a ti! Únete a la
                   comunidad y empieza tu camino en las artes marciales desde hoy
                   mismo.<br></br> <br></br>
-                  <a href="https://wa.me/593984162681" target="_blank">📞 WhatsApp click aquí (+593) 984 162 681</a>
+                  <a href="https://wa.link/ffbc45" target="_blank">📞 WhatsApp click aquí (+593) 984 162 681</a>
  <br></br>
                   📍 Av. Ilalo y Rio Zamora, Valle de los Chillos, Quito Ecuador
                 </p>

@@ -52,7 +52,7 @@ export default function Horarios() {
               src={precioImage}
               alt="precioRuta"
               
-              className="aspect-square rounded-2xl bg-zinc-100 object-center dark:bg-zinc-800"
+              className="mb-10 sm:mb-0 aspect-square rounded-2xl bg-zinc-100 object-center dark:bg-zinc-800"
             />
             <Image
               src={precioImage2}
@@ -79,7 +79,7 @@ export default function Horarios() {
                           comunidad y empieza tu camino en las artes marciales desde hoy
                           mismo.<br></br> <br></br>
 
-                          <a href="https://wa.me/593984162681" target="_blank">📞 WhatsApp click aquí (+593) 984 162 681</a>
+                          <a href="https://wa.link/ffbc45" target="_blank">📞 WhatsApp click aquí (+593) 984 162 681</a>
  <br></br>
                           📍 Av. Ilalo y Rio Zamora, Valle de los Chillos, Quito Ecuador
                         </p>
