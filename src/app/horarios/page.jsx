@@ -2,14 +2,11 @@ import Image from 'next/image'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { Container } from '@/components/Container'
 
-import contactoImage from '@/images/contacto/contacto.jpeg'
+
 import horariosImage from '@/images/horarios/horariosRutaAdultos.png'
 import horariosImageKids from '@/images/horarios/horariosRutaKids.png'
 import precioImage from '@/images/horarios/preciosRuta.png'
 import precioImage2 from '@/images/horarios/preciosRuta2.png'
-
-
-
 
 export const metadata = {
   title: 'Horarios y Precios | La Ruta BJJ - Jiu-Jitsu en el Valle de los Chillos',
@@ -20,94 +17,120 @@ export const metadata = {
 export default function Horarios() {
   return (
     <>
-    
-    <SimpleLayout
-      title="Horarios de clases"
-      intro="En La Ruta BJJ, ofrecemos una variedad de horarios para adaptarnos a tu estilo de vida y necesidades. Nuestras clases están diseñadas tanto para niños como para adultos, con sesiones en la mañana y en la tarde."
-    >
-      <div className="max-w-xs px-2.5 md:max-w-s lg:max-w-md md:flex gap-16">
-      <Image
+      {/* Sección: Horarios */}
+      <SimpleLayout
+        title="Horarios de clases"
+        intro="En La Ruta BJJ, ofrecemos una variedad de horarios para adaptarnos a tu estilo de vida y necesidades. Nuestras clases están diseñadas tanto para niños como para adultos, con sesiones en la mañana y en la tarde."
+      >
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-1 md:gap-12 lg:gap-16">
+          {/* Horario adultos */}
+          <div className="w-full">
+            <Image
               src={horariosImage}
-              alt="rutaHorario"
-              
-              className="mb-10 sm:mb-0 aspect-square rounded-2xl bg-zinc-100 object-center dark:bg-zinc-800"
+              alt="Horario semanal de La Ruta BJJ"
+              width={800} // 👈 Ancho real de tu imagen
+              height={600} // 👈 Altura real de tu imagen
+              className="rounded-2xl bg-zinc-100 object-contain w-full sm:mx-auto h-auto sm:w-[800px] dark:bg-zinc-800"
             />
+          </div>
+
+          {/* Horario kids */}
+          <div className="w-full">
             <Image
               src={horariosImageKids}
-              alt="rutaHorarioKids"
-              
-              className="aspect-square rounded-2xl bg-zinc-100 object-center dark:bg-zinc-800"
+              alt="Horario de clases para niños en La Ruta BJJ"
+              width={800} // 👈 Ancho real de tu imagen
+              height={600} // 👈 Altura real de tu imagen
+              className="rounded-2xl bg-zinc-100 object-contain w-full sm:mx-auto  h-auto  sm:w-[800px] dark:bg-zinc-800"
             />
-            
-        
-      </div>
-    </SimpleLayout>
-    <SimpleLayout
-      title="Precios"
-      intro="En La Ruta BJJ, ofrecemos una variedad de precios para adaptarnos a tu estilo de vida y necesidades."
-    >
-      <div className="max-w-xs px-2.5 md:max-w-s lg:max-w-md md:flex gap-16">
-      
+          </div>
+        </div>
+      </SimpleLayout>
+
+      {/* Sección: Precios */}
+      <SimpleLayout
+        title="Precios"
+        intro="En La Ruta BJJ, ofrecemos una variedad de precios para adaptarnos a tu estilo de vida y necesidades."
+      >
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">
+          <div className="w-full">
             <Image
               src={precioImage}
-              alt="precioRuta"
-              
-              className="mb-10 sm:mb-0 aspect-square rounded-2xl bg-zinc-100 object-center dark:bg-zinc-800"
+              alt="Precios de La Ruta BJJ"
+              width={800} // 👈 Ajusta según tu imagen real
+              height={600} // 👈 Ajusta según tu imagen real
+              className="rounded-2xl bg-zinc-100 object-contain w-full h-auto dark:bg-zinc-800"
             />
+          </div>
+          <div className="w-full">
             <Image
               src={precioImage2}
-              alt="precioRuta"
-              
-              className="aspect-square rounded-2xl bg-zinc-100 object-center dark:bg-zinc-800"
+              alt="Precios adicionales de La Ruta BJJ"
+              width={800} // 👈 Ajusta según tu imagen real
+              height={600} // 👈 Ajusta según tu imagen real
+              className="rounded-2xl bg-zinc-100 object-contain w-full h-auto dark:bg-zinc-800"
             />
-        
-      </div>
-    </SimpleLayout>
-    <Container className="md:mt-16">
-          <div className="max-w-2xl mt-12 sm:mt-28">
-              <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-4xl dark:text-zinc-100">
-                Empieza hoy en La Ruta Jiu jitsu
-              </h1>
-            </div>  
-                <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-                  <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-2">
-                    {/* Tarjeta 1 */}
-                    <div className="mx-auto w-full max-w-xl">
-                      <div className="group relative overflow-hidden">
-                        <p className="mt-6 sm:mt-20 text-base text-zinc-600 dark:text-zinc-400">
-                          En La Ruta Jiu-Jitsu tenemos todo… ¡menos a ti! Únete a la
-                          comunidad y empieza tu camino en las artes marciales desde hoy
-                          mismo.<br></br> <br></br>
+          </div>
+        </div>
+      </SimpleLayout>
 
-                          <a href="https://wa.link/ffbc45" target="_blank">📞 WhatsApp click aquí (+593) 984 162 681</a>
- <br></br>
-                          📍 Av. Ilalo y Rio Zamora, Valle de los Chillos, Quito Ecuador
-                        </p>
-                      </div>
-                    </div>
-        
-                    {/* Tarjeta 2 */}
-                    <div className="sm:mt-12 mx-auto w-full max-w-xl">
-                      <div className="group relative overflow-hidden rounded-lg shadow-lg">
-                        <Image
-                          src={contactoImage}
-                          alt="Brazilian Jiu Jitsu"
-                          width={800}
-                          height={533}
-                          className="h-auto w-full object-cover transition-transform duration-300 group-hover:scale-150"
-                        />
-        
-                        <a
-                          href="https://www.google.com/maps/place/HORNO+DE+LE%C3%91A+(sucursal+El+Tri%C3%A1ngulo)/@-0.2963972,-78.4562364,17z/data=!3m1!4b1!4m6!3m5!1s0x91d5bd7b84cc895b:0x6f64d764d89e9c4!8m2!3d-0.2963972!4d-78.4536615!16s%2Fg%2F11j0h9rr1v?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D"
-                          target='blank'
-                          className="absolute inset-0 z-10"
-                          aria-label="Brazilian Jiu Jitsu"
-                        />
-                      </div>
-                    </div>
-                  </div>
+      {/* Sección: Contacto + Mapa */}
+      <Container className="md:mt-16">
+        <div className="max-w-2xl mt-12 sm:mt-28">
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+            Empieza hoy en La Ruta Jiu-Jitsu
+          </h1>
+        </div>
+
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 mt-12 sm:mt-20">
+          <div className="grid grid-cols-1 gap-y-12 lg:grid-cols-2 lg:gap-x-16 items-start">
+            {/* Tarjeta 1: Información de contacto */}
+            <div className="w-full max-w-xl">
+              <p className="text-base text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                En La Ruta Jiu-Jitsu 
+                tenemos todo… ¡menos a ti! Únete a nuestra comunidad y empieza tu camino en las artes marciales desde hoy mismo.
+              </p>
+
+              <div className="mt-6 space-y-4">
+                <div>
+                  <a
+                    href="https://wa.link/ffbc45"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-lg font-medium transition-colors"
+                  >
+                    📞 WhatsApp: (+593) 984 162 681
+                  </a>
                 </div>
-              </Container>
-              </>
+
+                <div className="flex items-start gap-2">
+                  <span className="text-zinc-600 dark:text-zinc-400">📍</span>
+                  <span className="text-zinc-600 dark:text-zinc-400">
+                    Av. Ilalo y Río Zamora, Valle de los Chillos, Quito, Ecuador
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Tarjeta 2: Mapa embebido */}
+            <div className="w-full max-w-xl">
+              <div className="rounded-lg overflow-hidden shadow-lg bg-white dark:bg-zinc-800">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.736849987883!2d-78.4562364!3d-0.2963972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5bd14d755a287:0x8f9e7160321f3b37!2sLA%20RUTA%20JIU%20JITSU%20Academia%20de%20artes%20marciales%20Muay%20Thai%20y%20Jiu-jitsu%20brasile%C3%B1o!5e0!3m2!1ses!2sec!4v1717000000000!5m2!1ses!2sec"
+                  width="100%"
+                  height="500"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Ubicación de La Ruta Jiu-Jitsu en Valle de los Chillos, Quito"
+                  className="w-full h-[350px]  rounded-lg"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
+    </>
   )
 }

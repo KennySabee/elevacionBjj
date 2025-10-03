@@ -9,7 +9,7 @@ import {
   InstagramIcon,
   FacebookIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images//equipo/kidsMuay.jpg'
+import portraitImage from '@/images//equipo/portraitImage.jpeg'
 import kennyImage from '@/images/equipo/kennyPerfil.jpg'
 
 function SocialLink({ className, href, children, icon: Icon }) {
@@ -102,7 +102,7 @@ export default function About() {
                 Siguenos en Instagram
               </SocialLink>
               <SocialLink
-                href="https://www.tiktok.com/@larutajiujitsu"
+                href="https://www.tiktok.com/@la_ruta_bjj"
                 icon={TikTokIcon}
                 className="mt-4"
               >
@@ -195,23 +195,19 @@ export default function About() {
               </div>
             </div>
 
-            {/* Tarjeta 2 */}
-            <div className="mx-auto w-full max-w-xl">
+            {/* Tarjeta 2: Mapa embebido de LA RUTA JIU JITSU - más alto y responsivo */}
+            <div className="mx-auto w-full max-w-xl sm:mt-12">
               <div className="group relative overflow-hidden rounded-lg shadow-lg">
-                <Image
-                  src={contactoImage}
-                  alt="Brazilian Jiu Jitsu"
-                  width={800}
-                  height={533}
-                  className="h-auto w-full object-cover transition-transform duration-300 group-hover:scale-150"
-                />
-
-                <a
-                  href="https://www.google.com/maps/place/HORNO+DE+LE%C3%91A+(sucursal+El+Tri%C3%A1ngulo)/@-0.2963972,-78.4562364,17z/data=!3m1!4b1!4m6!3m5!1s0x91d5bd7b84cc895b:0x6f64d764d89e9c4!8m2!3d-0.2963972!4d-78.4536615!16s%2Fg%2F11j0h9rr1v?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D"
-                  target='blank'
-                  className="absolute inset-0 z-10"
-                  aria-label="Brazilian Jiu Jitsu"
-                />
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.736849987883!2d-78.4562364!3d-0.2963972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5bd14d755a287:0x8f9e7160321f3b37!2sLA%20RUTA%20JIU%20JITSU%20Academia%20de%20artes%20marciales%20Muay%20Thai%20y%20Jiu-jitsu%20brasile%C3%B1o!5e0!3m2!1ses!2sec!4v1717000000000!5m2!1ses!2sec"
+                  // 👈 Aumentado de 450 a 500 (puedes probar 600 si quieres más)
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Ubicación de LA RUTA JIU JITSU - Academia de Jiu-Jitsu y Muay Thai"
+                  className="h-[350px] w-full rounded-lg object-cover sm:h-[300px]"
+                ></iframe>
               </div>
             </div>
           </div>
