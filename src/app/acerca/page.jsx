@@ -14,26 +14,26 @@ import portraitImage from '@/images/equipo/portraitImage.jpeg'
 import kennyImage from '@/images/equipo/kennyPerfil.jpg'
 
 // 🖼️ Importa tus fotos (mejor para rendimiento en Next.js)
-import photo1 from '@/images/photos/image-1.jpg'
-import photo2 from '@/images/photos/image-2.jpg'
-import photo3 from '@/images/photos/image-3.jpg'
-import photo4 from '@/images/photos/image-4.jpg'
-import photo5 from '@/images/photos/image-5.jpg'
-import photo6 from '@/images/photos/image-6.jpg'
-import photo7 from '@/images/photos/image-7.jpg'
-import photo8 from '@/images/photos/image-8.jpg'
-import photo9 from '@/images/photos/image-9.jpg'
-import photo10 from '@/images/photos/image-10.jpg'
-import photo11 from '@/images/photos/image-11.jpg'
-import photo12 from '@/images/photos/image-12.jpg'
-import photo13 from '@/images/photos/image-13.jpg'
-import photo14 from '@/images/photos/image-14.jpg'
-import photo15 from '@/images/photos/image-15.jpeg'
-import photo16 from '@/images/photos/image-16.jpeg'
-// import photo17 from '@/images/photos/image-17.jpg'
-// import photo18 from '@/images/photos/image-18.jpg'
-// import photo19 from '@/images/photos/image-19.jpg'
-// import photo20 from '@/images/photos/image-20.jpg'
+import photo1 from '@/images/photos/image-1.webp'
+import photo2 from '@/images/photos/image-2.webp'
+import photo3 from '@/images/photos/image-3.webp'
+import photo4 from '@/images/photos/image-4.webp'
+import photo5 from '@/images/photos/image-5.webp'
+import photo6 from '@/images/photos/image-6.webp'
+import photo7 from '@/images/photos/image-7.webp'
+import photo8 from '@/images/photos/image-8.webp'
+import photo9 from '@/images/photos/image-9.webp'
+import photo10 from '@/images/photos/image-10.webp'
+import photo11 from '@/images/photos/image-11.webp'
+import photo12 from '@/images/photos/image-12.webp'
+import photo13 from '@/images/photos/image-13.webp'
+import photo14 from '@/images/photos/image-14.webp'
+import photo15 from '@/images/photos/image-15.webp'
+import photo16 from '@/images/photos/image-16.webp'
+// import photo17 from '@/images/photos/image-17.webp'
+// import photo18 from '@/images/photos/image-18.webp'
+// import photo19 from '@/images/photos/image-19.webp'
+// import photo20 from '@/images/photos/image-20.webp'
 
 // Agrega más si tienes (hasta donde necesites)
 
@@ -214,9 +214,8 @@ export default function About() {
             ))}
           </ul>
         </div>
-      </Container>
-{/* ======================================== */}
-{/* 🔸 CARRUSEL DE GALERÍA - Una imagen a la vez 🔸 */}
+      </Container>{/* ======================================== */}
+{/* 🔸 CARRUSEL DE GALERÍA - Una imagen a la vez (Optimizado + Animación) 🔸 */}
 {/* ======================================== */}
 <Container className="mt-16 sm:mt-24">
   <div className="max-w-2xl">
@@ -240,16 +239,49 @@ export default function About() {
       </svg>
     </button>
 
-    {/* Imagen principal */}
+    {/* Contenedor con transición */}
     <div className="relative h-[400px] w-full max-w-2xl overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800">
-      <Image
-        src={galleryPhotos[currentIndex]}
-        alt={`Foto ${currentIndex + 1} - La Ruta Jiu Jitsu`}
-        fill
-        className="object-contain"
-        placeholder="blur"
-        priority={currentIndex === 0} // solo la primera con prioridad
-      />
+      {/* Imagen actual con animación */}
+      <div className="absolute inset-0 transition-opacity duration-1000 ease-in-out">
+        <Image
+          src={galleryPhotos[currentIndex]}
+          alt={`Foto ${currentIndex + 1} - La Ruta Jiu Jitsu`}
+          fill
+          className="object-contain"
+          placeholder="blur"
+          priority={currentIndex === 0}
+          // Precarga la imagen actual + la siguiente y anterior
+          loading={currentIndex === 0 ? 'eager' : 'lazy'}
+        />
+      </div>
+
+      {/* Pre-carga de la imagen siguiente (invisible) */}
+      {galleryPhotos[(currentIndex + 1) % galleryPhotos.length] && (
+        <div className="absolute inset-0 opacity-0 pointer-events-none">
+          <Image
+            src={galleryPhotos[(currentIndex + 1) % galleryPhotos.length]}
+            alt=""
+            fill
+            className="object-contain"
+            loading="eager"
+            style={{ display: 'none' }} // oculto pero cargado
+          />
+        </div>
+      )}
+
+      {/* Pre-carga de la imagen anterior (invisible) */}
+      {galleryPhotos[(currentIndex - 1 + galleryPhotos.length) % galleryPhotos.length] && (
+        <div className="absolute inset-0 opacity-0 pointer-events-none">
+          <Image
+            src={galleryPhotos[(currentIndex - 1 + galleryPhotos.length) % galleryPhotos.length]}
+            alt=""
+            fill
+            className="object-contain"
+            loading="eager"
+            style={{ display: 'none' }} // oculto pero cargado
+          />
+        </div>
+      )}
     </div>
 
     {/* Botón derecha */}
@@ -264,7 +296,7 @@ export default function About() {
     </button>
   </div>
 
-  {/* Indicadores (opcional pero útil) */}
+  {/* Indicadores */}
   <div className="mt-4 flex justify-center space-x-2">
     {galleryPhotos.map((_, index) => (
       <button
