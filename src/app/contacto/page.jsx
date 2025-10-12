@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Container } from '@/components/Container'
-import contactoImage from '@/images/contacto/contacto.jpeg'
 
 export const metadata = {
   title: 'Contacto | La Ruta BJJ - Jiu-Jitsu en el Valle de los Chillos',

@@ -4,8 +4,8 @@ import { Container } from '@/components/Container'
 
 
 import bjjImage from '@/images/equipo/askArena2.jpg'
-import grapplingImage from '@/images/equipo/grappling.jpg'
-import defensaPersonalImage from '@/images/equipo/bjj4.jpg'
+import grapplingImage from '@/images/equipo/grappling.jpeg'
+import defensaPersonalImage from '@/images/equipo/bjj4.jpeg'
 import ambienteImagen from '@/images/equipo/kids.jpg'
 
 

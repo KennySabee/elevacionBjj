@@ -158,6 +158,34 @@ export default async function Home() {
           </div>
         </div>
       </Container>
+      {/* ======================================== */}
+{/* 🔸 Video introductorio - ¿Qué es La Ruta? 🔸 */}
+{/* ======================================== */}
+<Container className="mt-24 sm:mt-28">
+  <div className="max-w-3xl text-left">
+    <h2 className="text-3xl font-bold tracking-tight text-zinc-800 sm:text-4xl dark:text-zinc-100 ">
+      ¿Qué es La Ruta?
+    </h2>
+    <p className="mt-4 text-base text-zinc-600 dark:text-zinc-400">
+      Descubre nuestra filosofía, nuestro enfoque y por qué entrenar con nosotros
+      puede transformar tu vida dentro y fuera del tatami.
+    </p>
+  </div>
+
+  <div className="mt-10 flex justify-center">
+    <div className="relative w-full max-w-[350px] sm:max-w-[400px] overflow-hidden rounded-2xl bg-zinc-900 shadow-xl">
+      <video
+        src="/videos/videoPrincipal.mp4"
+        controls
+        playsInline
+        className="w-full h-auto object-contain"
+        preload="metadata"
+      >
+        Tu navegador no soporta el elemento de video.
+      </video>
+    </div>
+  </div>
+</Container>
       <Container className="mt-12">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-4xl dark:text-zinc-100">
