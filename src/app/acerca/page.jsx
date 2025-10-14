@@ -183,7 +183,7 @@ export default function About() {
         <div className="mx-auto max-w-6xl">
           <div className="max-w-2xl">
             <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-              Combinando lucha olímpica con grappling de sumisión, el equipo
+              Combinando lucha olímpica con grappling de sumisión y muay thai, el equipo
               innova constantemente en el deporte, demostrando que su estilo
               funciona al más alto nivel. Se enfocan en que cada alumno entienda
               y pueda aplicar movimientos complejos en un ambiente seguro, sin
